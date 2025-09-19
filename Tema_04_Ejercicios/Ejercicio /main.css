@@ -34,4 +34,5 @@ section {
 .box:hover {
     border: 10px dashed white;
     animation: all ease-in-out cubic-bezier(1, 0, 0, 1);
+    cursor: pointer;
 }
