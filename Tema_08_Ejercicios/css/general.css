@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10vw;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+hr {
+    padding:0.5px;
+    margin: 25px 0px;
+    background-color: rgb(226, 226, 226);
+}
+
+.container {
+  border: 1px solid rgb(219, 219, 219);
+  box-shadow: 10px 4px 4px solid black;
+  padding: 20px;
+  margin: 10px;
+  height:280px;
+  border-radius: 5px 0px 0px 5px;
+  overflow-y: scroll;
+  box-shadow: 7px 8px 8px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 7px 8px 8px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 7px 8px 8px 1px rgba(0, 0, 0, 0.1);
+}

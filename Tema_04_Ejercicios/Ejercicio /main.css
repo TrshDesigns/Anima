@@ -1,0 +1,37 @@
+.box {
+    width: 100px;
+    height: 100px;
+    margin: 40px;
+    padding: 30px;
+    background-color: rgb(221, 92, 0);
+    border: 10px double white;
+    position: relative;
+    animation: all ease-in-out 1s;
+}
+
+#flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 800px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    position: relative;
+    top: 130px;
+    font-size: 15px;
+}
+
+section {
+    width: max-content;
+}
+
+.box:hover {
+    border: 10px dashed white;
+    animation: all ease-in-out cubic-bezier(1, 0, 0, 1);
+}

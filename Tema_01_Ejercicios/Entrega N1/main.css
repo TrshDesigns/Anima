@@ -1,0 +1,56 @@
+body {
+    background-image: url("https://substackcdn.com/image/fetch/$s_!InS6!,f_auto,q_auto:good,fl_progressive:steep/https://substack-post-media.s3.amazonaws.com/public/images/dbb1179d-a7bc-4d88-a4dc-c81c91ce63c0_1223x773.png");
+    color: white;
+}
+
+img {
+    border-radius: 30%;
+    max-width: 35vw;
+    filter: opacity(0.8);
+
+}
+
+#welcome-information{
+    position: absolute;
+    left: 25vw;
+    top: 50vh;
+    background-color: rgba(0, 0, 0, 0.474);
+    padding: 10px;
+}
+
+header {
+    background-color: rgba(128, 128, 128, 0.072);
+    padding: 1px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+a:hover{
+    background-color: white;
+    animation: ease-in-out 3.5s;
+    color: black;
+    margin-left: 10px;
+}
+header:hover {
+    background-color: rgba(128, 128, 128, 0.092);
+    cursor: pointer;
+}
+
+li::after{
+    text-decoration: "✴";
+}
+
+a {
+    color: white;
+    font-size:1.2rem;
+}
+a::after::content{
+    content: "♅";
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10vw 10px 10vw;
+    background-color: rgba(0, 0, 0, 0.837);
+}

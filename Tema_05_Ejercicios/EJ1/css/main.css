@@ -1,0 +1,86 @@
+* {
+
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+header {
+    width: 100vw;
+    height: max-content;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    position: fixed;
+    background: black;
+    color: white;
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    border-radius: 0px 0px 10px 10px;
+}
+
+footer {
+    width: 100%;
+    height: max-content;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    background: black;
+    color: white;
+}
+
+header a {
+    padding: 20px;
+}
+
+header h1, footer p {
+    font-family: monospace;
+    padding: 10px;
+}
+
+#header-image {
+    width: 60vw;
+}
+
+.card-container {
+    width: max-content;
+    scale: 1;
+    animation: ease-in-out all 0.5s;
+}
+
+.card-container:hover{
+    scale: 1.01;
+    animation: ease-in-out all 0.8s;
+    cursor:pointer;
+    box-shadow: 10px 0px 100px 10px rgba(0, 0, 0, 0.066);
+}
+
+.header-image-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.product-image {
+    max-width: 250px;
+    border-radius: 10px;
+}
+
+.card-flex-container {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

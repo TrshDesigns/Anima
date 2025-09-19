@@ -1,0 +1,19 @@
+img {
+    width: 600px;
+}
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#community {
+    color: #0bd0ef;
+}
+
+.link-images{
+    width: 300px;
+}
+.footer-note{
+    font-style: italic;
+    font-size: 14px;
+}
