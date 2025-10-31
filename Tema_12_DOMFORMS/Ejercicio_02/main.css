@@ -1,0 +1,171 @@
+
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+h1, h2 {
+  color: #212529;
+  font-weight: 600;
+}
+
+#sidebar {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  height: fit-content;
+  border: 1px solid #dee2e6;
+}
+
+#sidebar h2 {
+  font-size: 1.5rem;
+  color: #495057;
+  border-bottom: 2px solid #e9ecef;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#content {
+/* Content (panel izquierdo) */
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  min-height: 400px;
+  border: 1px solid #dee2e6;
+}
+
+#content h2 {
+  font-size: 1.6rem;
+  color: #343a40;
+  margin-bottom: 1rem;
+}
+
+#btnMostrar {
+  font-weight: 500;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+#btnMostrar:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.25);
+}
+
+
+#listaMarcas {
+  margin-top: 1rem;
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+#listaMarcas .list-group-item {
+  border: none;
+  border-bottom: 1px solid #e9ecef;
+  padding: 0.75rem 0;
+  font-size: 1.1rem;
+  color: #495057;
+  transition: background-color 0.2s;
+}
+
+#listaMarcas .list-group-item:hover {
+  background-color: #f1f3f5;
+  border-radius: 6px;
+  padding-left: 0.5rem;
+}
+
+#listaMarcas .list-group-item:last-child {
+  border-bottom: none;
+}
+
+#sidebar .btn {
+  border-radius: 8px;
+  font-weight: 500;
+  padding: 0.6rem 1rem;
+  transition: all 0.2s ease;
+}
+
+#sidebar .btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+#sidebar .btn-success {
+  background-color: #2fb344;
+  border-color: #2fb344;
+}
+
+#sidebar .btn-success:hover {
+  background-color: #28a33b;
+  border-color: #28a33b;
+}
+
+#sidebar .btn-danger {
+  background-color: #e03131;
+  border-color: #e03131;
+}
+
+#sidebar .btn-danger:hover {
+  background-color: #c92a2a;
+  border-color: #c92a2a;
+}
+
+#sidebar .btn-warning {
+  background-color: #f08c00;
+  border-color: #f08c00;
+  color: white;
+}
+
+#sidebar .btn-warning:hover {
+  background-color: #e67700;
+  border-color: #e67700;
+}
+
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  padding: 0.6rem 0.9rem;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-control:focus {
+  border-color: #4dabf7;
+  box-shadow: 0 0 0 0.2rem rgba(77, 171, 247, 0.25);
+}
+
+.input-group .btn {
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+}
+
+#alertContainer .alert {
+  border-radius: 8px;
+  font-size: 0.95rem;
+  padding: 0.75rem 1rem;
+  margin-top: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  #content, #sidebar {
+    margin-bottom: 1.5rem;
+  }
+  
+  #sidebar .btn {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+}

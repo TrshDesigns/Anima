@@ -1,0 +1,346 @@
+/*! claude-pipboy-terminal.css | Fallout Pip-Boy Orange Phosphor */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 16px;
+  line-height: 1.6;
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 3ch 4ch;
+  background: #0a0a00;
+  color: #ff9f00;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 400;
+  min-height: 100vh;
+  position: relative;
+  image-rendering: pixelated;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: grayscale;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0) 0px,
+    rgba(0, 0, 0, 0) 1px,
+    rgba(0, 0, 0, 0.15) 1px,
+    rgba(0, 0, 0, 0.15) 2px
+  );
+  pointer-events: none;
+  z-index: 10000;
+  animation: flicker 0.15s infinite;
+}
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle, transparent 40%, rgba(0, 0, 0, 0.5) 100%);
+  pointer-events: none;
+  z-index: 9999;
+}
+::selection {
+  background: #ff9f00;
+  color: #0a0a00;
+}
+::-webkit-scrollbar {
+  width: 2ch;
+  background: #1a1a00;
+}
+::-webkit-scrollbar-thumb {
+  background: #664400;
+  border: 1px solid #ff9f00;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #996600;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  color: #ffcc66;
+  margin: 2ch 0 1ch;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  text-shadow: 0 0 8px #ff9f00;
+}
+h1 {
+  font-size: 2em;
+  border-bottom: 2px solid #664400;
+  padding-bottom: 0.5ch;
+}
+h2 {
+  font-size: 1.6em;
+}
+h3 {
+  font-size: 1.3em;
+}
+p,
+ul,
+ol,
+pre,
+blockquote {
+  margin: 1.5ch 0;
+  line-height: 1.8;
+}
+ul,
+ol {
+  padding-left: 4ch;
+}
+li {
+  margin: 0.8ch 0;
+}
+li::marker {
+  color: #cc7700;
+}
+a {
+  color: #ffcc66;
+  text-decoration: none;
+  border-bottom: 1px dotted #ff9f00;
+}
+a:hover {
+  color: #fff;
+  background: #664400;
+  border-bottom: 1px solid #ffcc66;
+  text-shadow: 0 0 10px #ff9f00;
+}
+a:active {
+  color: #0a0a00;
+  background: #ff9f00;
+}
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 1em;
+  line-height: 1.6;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+input,
+select,
+textarea {
+  padding: 1ch 2ch;
+  background: #1a1a00;
+  color: #ffcc66;
+  border: 2px solid #664400;
+  outline: none;
+  min-width: 20ch;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #ff9f00;
+  background: #2a2200;
+  box-shadow: inset 0 0 0 1px #ff9f00, 0 0 15px rgba(255, 159, 0, 0.3);
+}
+button {
+  cursor: pointer;
+  background: #664400;
+  color: #ffcc66;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  padding: 1ch 3ch;
+  border: 2px outset #996600;
+  min-width: 15ch;
+  box-shadow: 2px 2px 0 #000;
+}
+button:hover {
+  background: #996600;
+  color: #fff;
+  border-color: #ffcc66;
+  text-shadow: 0 0 8px #ff9f00;
+}
+button:active {
+  border-style: inset;
+  box-shadow: inset 2px 2px 0 #000;
+  transform: translate(1px, 1px);
+}
+button:disabled {
+  background: #332200;
+  color: #664400;
+  border-color: #443300;
+  cursor: not-allowed;
+}
+pre,
+code,
+kbd {
+  background: #1a1a00;
+  color: #ffcc66;
+  border: 1px solid #664400;
+  font-family: inherit;
+  display: inline-block;
+  padding: 0.5ch 1ch;
+}
+pre {
+  display: block;
+  overflow-x: auto;
+  padding: 2ch;
+  margin: 2ch 0;
+  border: 2px solid #996600;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.5),
+    inset 0 0 20px rgba(255, 159, 0, 0.1);
+}
+kbd {
+  border: 2px outset #996600;
+  background: #332200;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  margin: 2ch 0;
+  border: 2px solid #996600;
+}
+th,
+td {
+  padding: 1ch 2ch;
+  text-align: left;
+  border-right: 1px solid #664400;
+  border-bottom: 1px solid #664400;
+}
+th {
+  background: #664400;
+  color: #ffcc66;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+td {
+  background: #1a1a00;
+  color: #ff9f00;
+}
+tr:hover td {
+  background: #2a2200;
+  color: #ffcc66;
+}
+th:last-child,
+td:last-child {
+  border-right: none;
+}
+tr:last-child td {
+  border-bottom: none;
+}
+.ascii {
+  border: 2px double #996600;
+  padding: 2ch;
+  background: #1a1a00;
+  margin: 2ch 0;
+  position: relative;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.5),
+    inset 0 0 30px rgba(255, 159, 0, 0.05);
+}
+.ascii::before {
+  content: "╔════════════════════════════════════════════════════════════════════════════╗";
+  display: block;
+  color: #996600;
+  margin: -2ch -2ch 1ch -2ch;
+  padding: 1ch 2ch;
+  background: #2a2200;
+  border-bottom: 1px solid #664400;
+  font-size: 0.9em;
+}
+.ascii::after {
+  content: "╚════════════════════════════════════════════════════════════════════════════╝";
+  display: block;
+  color: #996600;
+  margin: 1ch -2ch -2ch -2ch;
+  padding: 1ch 2ch;
+  background: #2a2200;
+  border-top: 1px solid #664400;
+  font-size: 0.9em;
+}
+.window {
+  border: 2px solid #ffcc66;
+  background: #1a1a00;
+  padding: 0;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.8), 0 0 20px rgba(255, 159, 0, 0.2);
+  margin: 2ch auto;
+  max-width: 80ch;
+}
+.window-title {
+  background: #996600;
+  color: #ffcc66;
+  padding: 0.5ch 2ch;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  border-bottom: 2px solid #ffcc66;
+  text-shadow: 0 0 5px #ff9f00;
+}
+.window-body {
+  padding: 2ch;
+}
+.blink {
+  animation: blink-cursor 1s step-end infinite;
+}
+input.blink::after {
+  content: "█";
+  animation: blink-cursor 1s step-end infinite;
+}
+::placeholder {
+  color: #664400;
+  opacity: 1;
+}
+hr {
+  border: none;
+  border-top: 2px solid #664400;
+  margin: 3ch 0;
+  background: repeating-linear-gradient(
+    90deg,
+    #0a0a00 0,
+    #0a0a00 1ch,
+    #664400 1ch,
+    #664400 1.1ch
+  );
+}
+@keyframes blink-cursor {
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.96;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.status-ok {
+  color: #88ff00;
+}
+.status-warn {
+  color: #ffaa00;
+}
+.status-error {
+  color: #ff4400;
+}
